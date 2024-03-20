@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahmin Oyunu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tahmin Oyunu</h1>
+        <div id="question-container">
+            <h2 id="question">Soru burada görünecek.</h2>
+        </div>
+        <div id="guess-container"></div>
+        <input type="text" id="guessInput" placeholder="Cevabınızı girin">
+        <button onclick="checkAnswer()">Cevapla</button>
+        <div id="result"></div>
+        <div id="score">Puan: <span id="scoreValue">20</span></div> <!-- Başlangıçta 20 puan ile başla -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

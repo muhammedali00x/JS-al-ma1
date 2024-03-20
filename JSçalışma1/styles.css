@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.game-container {
+    margin: 50px auto;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.letter-box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    color: transparent; /* Yazıların görünmemesi için */
+    transition: background-color 0.3s ease;
+}
+
+.letter-box.hidden {
+    background-color: #ddd;
+}
+
+.letter-box.revealed {
+    background-color: #4CAF50; /* Kutunun rengi (doğru cevap) */
+    border: 1px solid #aaa;
+    color: black; /* Harflerin görünmesi için */
+}
+
+.letter-box.revealed:hover {
+    background-color: #45a049; /* Kutunun rengi (hover efekti) */
+}
+
+#guess-container {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
